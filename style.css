@@ -43,15 +43,36 @@ ul {
   color: crimson;
 }
 
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(226, 226, 226);
+  margin: 5px;
+}
+
 /* Navbar End */
 
 /* Hero Start*/
 #hero {
   font-family: "Montserrat", sans-serif;
-  height: 100vh;
-  background-color: darkgray;
+  height: 89.6vh;
+  background-color: black;
+}
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+img {
+  height: 300px;
+  width: 500px;
+  object-fit: cover;
+}
 .cursor {
   display: inline-block;
   background-color: #ccc;
@@ -96,3 +117,14 @@ ul {
 }
 
 /* Hero End*/
+
+/* Media Query */
+
+@media screen and (max-width: 768px) {
+  ul {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+}
