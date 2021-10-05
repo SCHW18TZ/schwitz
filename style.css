@@ -6,6 +6,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 /* Default stylings */
 
 /* Navbar Start */
@@ -106,7 +107,7 @@ span{
 
 
 #about{
-  height: 86.1vh;
+  height: 100vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -160,6 +161,30 @@ span{
   }
 
 }
+
+/* skills start */
+#skills{
+  background-color:teal
+}
+
+.imgs{
+  display:flex;
+  justify-content: center;
+}
+
+.skills-img{
+  width: 150px;
+  height: 150px;
+  padding-bottom:60px ;
+}
+
+#skills h1{
+  text-align: center;
+  margin: 0 0 60px 0;
+}
+
+/* skills end */
+
 
 @media screen and (min-width:768px) {
   
