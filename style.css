@@ -35,7 +35,7 @@
 #hero {
   margin-top: 96px;
   font-family: "Montserrat", sans-serif;
-  height: 86.1vh;
+  height: 88.6vh;
   background-color: black;
 }
 .img {
@@ -122,6 +122,76 @@ span{
 /* About End */
 
 
+
+
+/* skills start */
+#skills{
+  background-color:teal;
+  padding-bottom:80px;
+}
+
+.imgs{
+  display:flex;
+  justify-content: center;
+}
+
+.skills-img{
+  width: 150px;
+  height: 150px;
+  padding-bottom:60px ;
+}
+
+#skills h1{
+  text-align: center;
+  margin: 0 0 60px 0;
+  padding-top:100px ;
+}
+
+/* skills end */
+
+/* Contact Start */
+
+#contact{
+  padding-top:100px;
+  height: 50vh;
+  background-color:darkgray;
+  color: white;
+}
+
+.text{
+  margin-bottom: 60px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+}
+
+.icons{
+  padding: 0 20px;
+  margin :0 20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.fab,.far{
+  margin: 20px;
+}
+
+
+.one,.two{
+  height: 2px;
+  width: 400px;
+  background-color:white;
+}
+
+.foot{
+  margin-top:50px;
+}
+
+/* Contact End */
+
+
 /* Media Query */
 
 @media screen and (max-width: 768px) {
@@ -143,6 +213,7 @@ span{
 
   #hero{
     margin: 0;
+    height: 100vh;
   }
 
   .hero-img,.about-img {
@@ -160,30 +231,11 @@ span{
     text-align: center;
   }
 
+
+  
+
 }
 
-/* skills start */
-#skills{
-  background-color:teal
-}
-
-.imgs{
-  display:flex;
-  justify-content: center;
-}
-
-.skills-img{
-  width: 150px;
-  height: 150px;
-  padding-bottom:60px ;
-}
-
-#skills h1{
-  text-align: center;
-  margin: 0 0 60px 0;
-}
-
-/* skills end */
 
 
 @media screen and (min-width:768px) {
