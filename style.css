@@ -9,57 +9,32 @@
 /* Default stylings */
 
 /* Navbar Start */
-nav {
-  display: flex;
-  justify-content: space-between;
-  background-color: teal;
-  font-family: "Spartan", sans-serif;
-  color: rgb(226, 226, 226);
-  padding: 20px 30px;
-  /* position: fixed; */
-  width: 100%;
-}
 
-ul {
-  display: flex;
-  list-style-type: none;
-}
 
-.nav-item {
+.navbar-brand {
+  text-transform: uppercase;
+  letter-spacing: 2px;
   font-weight: 500;
   font-size: 1.5rem;
-  margin: 0 30px 0 30px;
-  color: rgb(226, 226, 226);
-  text-decoration: none;
-  transition: 0.3s ease;
 }
 
+
+.nav-item {
+  font-size: 1.5rem;
+}
+
+.nav-item,
 .nav-brand {
-  letter-spacing: 1px;
-  font-weight: 400;
-}
-
-.nav-item:hover {
-  color: crimson;
-}
-
-.burger {
-  display: none;
-}
-
-.burger div {
-  width: 25px;
-  height: 3px;
-  background-color: rgb(226, 226, 226);
-  margin: 5px;
+  margin: 14px 30px;
 }
 
 /* Navbar End */
 
 /* Hero Start*/
 #hero {
+  margin-top: 96px;
   font-family: "Montserrat", sans-serif;
-  height: 89.6vh;
+  height: 86.1vh;
   background-color: black;
 }
 .img {
@@ -68,11 +43,12 @@ ul {
   align-items: center;
 }
 
-img {
+.hero-img  {
   height: 300px;
-  width: 500px;
+  width: 400px;
   object-fit: cover;
 }
+
 .cursor {
   display: inline-block;
   background-color: #ccc;
@@ -100,7 +76,7 @@ img {
 }
 
 .type-animation {
-  font-size: 2rem;
+  font-size: 0rem;
   font-weight: 500;
   display: flex;
   justify-content: center;
@@ -118,13 +94,81 @@ img {
 
 /* Hero End*/
 
+/* About start */
+span{
+  color:crimson;
+}
+
+
+.about-p {
+  font-size:1.6rem;
+}
+
+
+#about{
+  height: 86.1vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-img{
+  float: left;
+  height:400px;
+  width: 400px;
+}
+
+/* About End */
+
+
 /* Media Query */
 
 @media screen and (max-width: 768px) {
-  ul {
-    display: none;
+  .type-text,
+  .cursor {
+    font-size: 2rem;
+    margin: 90px 0;
   }
-  .burger {
-    display: block;
+
+  .navbar-toggler{
+    margin-right:10px;
   }
+
+  .nav-item,
+  .nav-brand {
+    margin: 0;
+    padding: 0;
+  }
+
+  #hero{
+    margin: 0;
+  }
+
+  .hero-img,.about-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #about{
+    margin-top:0px;
+  }
+
+  #about h1,p{
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+}
+
+@media screen and (min-width:768px) {
+  
+  .about-text{
+    position: relative;
+    top: 150px;
+    right:100px;
+    text-align: center;
+    float: right;
+  }
+
 }
