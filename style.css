@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600;700&display=swap");
+
+/* Default stylings */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Default stylings */
+
+/* Navbar Start */
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: teal;
+  font-family: "Spartan", sans-serif;
+  color: rgb(226, 226, 226);
+  padding: 20px 30px;
+  /* position: fixed; */
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-item {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 0 30px 0 30px;
+  color: rgb(226, 226, 226);
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.nav-brand {
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.nav-item:hover {
+  color: crimson;
+}
+
+/* Navbar End */
+
+/* Hero Start*/
+#hero {
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  background-color: darkgray;
+}
+
+.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: cursor 1s infinite;
+}
+
+@keyframes cursor {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+
+.type-animation {
+  font-size: 2rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0;
+  font-family: "Spartan", sans-serif;
+  color: white;
+}
+
+.type-text,
+.cursor {
+  font-size: 3rem;
+  margin: 90px 0;
+}
+
+/* Hero End*/
