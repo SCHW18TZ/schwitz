@@ -248,12 +248,12 @@ span{
 
 
   .skills-img{
-    height:100px;
-    width:100px;
+    height:80px;
+    width:80px;
   }
 
   #skills{
-    height:80vh;
+    height:100vh;
   }
   
   #skills h1{
