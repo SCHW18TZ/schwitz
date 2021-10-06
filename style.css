@@ -249,7 +249,8 @@ span{
 
   .skills-img{
     height:80px;
-    width:80px;
+    margin: 15px 40px;
+    
   }
 
   #skills{
@@ -257,7 +258,7 @@ span{
   }
   
   #skills h1{
-    margin-bottom:100px;
+    margin-bottom:40px;
 
   }
 
