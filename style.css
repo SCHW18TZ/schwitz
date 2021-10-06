@@ -107,6 +107,8 @@ span{
 
 
 #about{
+  background-color: black;
+  color:white;
   height: 100vh;
   display: flex;
   justify-content: space-around;
@@ -127,24 +129,30 @@ span{
 /* skills start */
 #skills{
   background-color:teal;
-  padding-bottom:80px;
+  padding-bottom:100px;
+  height: 65vh;
 }
 
 .imgs{
+  height:60%;
+  width: 100%;
   display:flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;  
 }
 
+
 .skills-img{
-  width: 150px;
-  height: 150px;
-  padding-bottom:60px ;
+  margin:0 30px;
+  width: 120px;
+  height: 120px;
 }
 
 #skills h1{
+  font-size: 3rem;
   text-align: center;
-  margin: 0 0 60px 0;
-  padding-top:100px ;
+  padding: 80px ;
 }
 
 /* skills end */
@@ -216,6 +224,13 @@ span{
     height: 100vh;
   }
 
+  .hero-img{
+    margin-top: 100px;
+  }
+
+  .about-img{
+    margin-top: 50px;
+  }
   .hero-img,.about-img {
     height: 200px;
     width: 100%;
@@ -232,7 +247,37 @@ span{
   }
 
 
+  .skills-img{
+    height:100px;
+    width:100px;
+  }
+
+  #skills{
+    height:80vh;
+  }
   
+  #skills h1{
+    margin-bottom:100px;
+
+  }
+
+  .imgs{
+    text-align:center;
+    height:50%;
+    width: 90%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;  
+  }
+  
+
+  /* #skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+
 
 }
 
