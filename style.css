@@ -9,6 +9,29 @@
 
 /* Default stylings */
 
+/* Scrollbar -- start */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(229, 21, 63);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(229, 1, 1);
+}
+
+/* Scrollbar -- end */
+
 /* Navbar Start */
 
 
@@ -146,54 +169,14 @@ span{
 }
 
 .single-img{
-  margin:0 20px;
+  margin:0 30px;
   height: 150px;
   width: 150px;
 }
 
 /* skills end */
 
-/* Contact Start */
 
-#contact{
-  padding-top:100px;
-  height: 50vh;
-  background-color:darkgray;
-  color: white;
-}
-
-.text{
-  margin-bottom: 60px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-
-}
-
-.icons{
-  padding: 0 20px;
-  margin :0 20px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-}
-
-.fab,.far{
-  margin: 20px;
-}
-
-
-.one,.two{
-  height: 2px;
-  width: 400px;
-  background-color:white;
-}
-
-.foot{
-  margin-top:50px;
-}
-
-/* Contact End */
 
 
 /* Media Query */
