@@ -44,10 +44,4 @@ document.addEventListener("DOMContentLoaded", function () {
   if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
 
-// var frm = document.querySelector('#contact')
-// frm.addEventListener("submit", (e) => {
-//     e.preventDefault();
-//     let name = document.getElementById("name").value;
-//     let messege = document.getElementById("messege").value;
-//     var win = window.open(`https://wa.me/+918450996596?text=Hi%20I%27m%20${name},%20${messege}`, '_blank');
-// })
+
