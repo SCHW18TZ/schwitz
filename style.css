@@ -38,7 +38,7 @@
 
 /* Scrollbar -- end */
 
-/* Navbar Start */
+Navbar Start
 
 
 .navbar-brand {
@@ -62,7 +62,7 @@
 
 /* Hero Start*/
 #hero {
-  margin-top: 96px;
+  padding-top: 96px;
   font-family: "Montserrat", sans-serif;
   height: 88.6vh;
   background-color: black;
@@ -74,8 +74,8 @@
 }
 
 .hero-img  {
-  height: 300px;
-  width: 400px;
+  height: 200px;
+  width: 200px;
   object-fit: cover;
 }
 
@@ -124,34 +124,40 @@
 
 /* Hero End*/
 
-/* About start */
+/* About start  */
+
+.about-font{
+  text-align: center;
+}
+
+.about-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+#about{
+  height: 100vh;
+  background-color: black;
+  color:white;
+  justify-content: center;
+  align-items: center;
+  display:flex;
+}
 span{
   color:crimson;
 }
 
 
-.about-p {
-  font-size:1.6rem;
+.about-text p{
+  text-align:center;
 }
-
-
-#about{
-  background-color: black;
-  color:white;
-  width:100%;
-  height: 100vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.about-img{
+#about img{
+  height: 200px;
+  width: 200px;
   float: left;
-  height:400px;
-  width: 400px;
 }
-
-/* About End */
+/* About End  */
 
 
 
@@ -159,19 +165,20 @@ span{
 /* skills start */
 
 #skills{
+  padding-top:50px;
   text-align:center;
   background-color: black;
   color:white;
-  height: 100vh;
+  height: 80vh;
 }
 
 .image-con{
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap:wrap;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:150px 150px;
+  justify-items: center;
+  align-items:center;
+
 }
 
 .single-img{
@@ -184,128 +191,95 @@ span{
 
 
 /* Contact start */
-
-
-
-#contact{
-  color:white;
-  padding-top: 100px;
-  background-color: black;
-  height: 90vh;
-  text-align:center;
-}
-
-#contact input[type="text"]:hover,
-#contact input[type="email"]:hover,
-#contact input[type="tel"]:hover,
-#contact input[type="url"]:hover,
-#contact textarea:hover {
-  -webkit-transition: border-color 0.3s ease-in-out;
-  -moz-transition: border-color 0.3s ease-in-out;
-  transition: border-color 0.3s ease-in-out;
-  border: 1px solid #aaa;
-}
-
-#contact input[type="text"],
-#contact input[type="email"],
-#contact input[type="tel"],
-#contact input[type="url"],
-#contact textarea {
-  width: 100%;
-  border: 1px solid #ccc;
-  background: #FFF;
-  margin: 0 0 5px;
-  padding: 10px;
-}
-
-.loader{
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top:0px;
-  left:0px;
-  background: rgb(0, 0, 0);
-  display:none;
-}
-
-.username,.email{
-  border-radius: 10px;
-  margin:30px 0 ;
-  width: 250px;
-}
-
-.message{
-  border-radius: 10px;
-  width:250px;
-  height: 250px;
-}
-
-::placeholder{
+.contact {
+  color:black;
+  margin-top: 100px;
+  padding-bottom: 100px;
   text-align: center;
 }
-.container {
-  max-width: 400px;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-}
 
-
-
-fieldset {
-  border: medium none !important;
-  margin: 0 0 10px;
-  min-width: 100%;
-  padding: 0;
-  width: 100%;
-}
-
-#contact input[type="text"]:hover,
-#contact input[type="email"]:hover,
-#contact input[type="tel"]:hover,
-#contact input[type="url"]:hover,
-#contact textarea:hover {
-  -webkit-transition: border-color 0.3s ease-in-out;
-  -moz-transition: border-color 0.3s ease-in-out;
-  transition: border-color 0.3s ease-in-out;
-  border: 1px solid #aaa;
-}
-
-#contact textarea {
-  height: 100px;
-  max-width: 100%;
-  resize: none;
-}
-
-#contact button[type="submit"] {
-  cursor: pointer;
-  width: 70%;
-  border: none;
-  background: #4CAF50;
-  color: #FFF;
-  margin: 0 0 5px;
+.contact h2 {
   padding: 10px;
+  border-bottom: 5px solid #7c00c9;
+  display: inline-block;
+}
+
+.contact .col-12 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact .form {
+  padding: 60px;
+  text-align: left;
+  background: #ffffff;
+  -webkit-box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+          box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.contact .form h2 {
+  font-size: 24px;
+}
+
+.contact .form .textarea {
+  margin: 30px 0px;
+}
+
+.contact .form .textarea label {
+  font-weight: 600;
+  color: #45464d;
+}
+
+.contact .form .textarea input,
+.contact .form .textarea textarea {
+  width: 100%;
   font-size: 15px;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #cdcaed;
+  color: #45464d;
+}
+
+.contact .form .textarea textarea {
+  height: 150px;
 }
 
 
-#contact button[type="submit"]:hover {
-  background: #43A047;
-  -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
+
+.contact .form button:hover {
+  opacity: 0.9;
 }
 
-#contact button[type="submit"]:active {
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+.contact .form:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
+.contact-btn{
+  margin-top:30px;
+  color:black;
+  display: inline-block;
+  text-decoration: none;
+  color:#fff;
+  border: 1px solid black;
+  position: relative;
+  background-color: black;
+  padding: 12px 50px;
+  cursor:pointer;
+  transition: 0.3s ease;
+}
+#contact button:hover{
+  border: 1px solid crimson;
+  background-color:crimson;
+}
 
-/* Contact end */
+#about h1, #trainers h1,#courses h1,#contact h1{
+  font-size: 2rem;
+}
+
+/* Contact End */
 
 
 
@@ -322,6 +296,9 @@ fieldset {
     margin-right:10px;
   }
 
+  
+
+
   .nav-item,
   .nav-brand {
     margin: 0;
@@ -329,7 +306,6 @@ fieldset {
   }
 
   #hero{
-    margin: 0;
     height: 100vh;
   }
 
@@ -341,20 +317,23 @@ fieldset {
     margin-top: 50px;
   }
   .hero-img,.about-img {
-    height: 200px;
+    height: 250px;
     width: 100%;
     object-fit: cover;
   }
 
 
-  #about{
-    margin-top:0px;
+  .about-font{
+    margin-top: 50px;
   }
 
-  #about h1,p{
-    margin-bottom: 20px;
-    text-align: center;
+  .about-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
+
 
   #skills{
     padding-bottom: 20px;
@@ -365,18 +344,12 @@ fieldset {
     width: 90px;
   }
   
-  #about p {
-    font-size: 1rem;
-  }
-
     
   .about-img{
-    float: left;
-    height:300px;
-    width: 300px;
-    object-fit:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
 
 
 

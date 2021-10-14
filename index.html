@@ -92,6 +92,7 @@
             </div>
          </div>
       </nav>
+
       <section id="hero">
          <div class="type-animation">
             <span class="type-text"></span>
@@ -101,23 +102,25 @@
             <img class="hero-img" src="/images//undraw_Coding_re_iv62.svg" alt="" />
          </div>
       </section>
-      <section id="about">
-         <div class="row">
-            <div class="col-sm-6">
-               <div class="about-text">
-                  <h1>About <span>me</span> </h1>
-                  <p class="about-p">My name is <span>schwitz</span>. I am passionate  developer from India!</p>
+      
+      <!-- About start -->
+
+           <section id="about" class="sm:text-center">
+               <div class="row">
+                  <div class="col-sm-12">
+               
+               <div class="about-font">
+                  <h1>About <span>me</span></h1>
+                  <p>I am a passionate developer from India. I love to build websites</p>
                </div>
+               <div class="about-img">
+                  <img src="images/undraw_About_me_re_82bv.svg" alt="   ">
             </div>
-            <img class="about-img" src="/images/undraw_About_me_re_82bv.svg" alt="">
          </div>
-      </section>
-      <script src="app.js"></script>
-      <noscript
-         >Please enable javascript for the proper functioning of this
-         website.
-      </noscript
-         >
+      </div>
+         </section>
+   
+         <!-- About End -->
          
 
          
@@ -142,111 +145,38 @@
         </div>
 
 
-        <section id="contact">
-         <div class="container">
-            <form id="contact" method="post">
-               <h3>Contact me</h3>
-               <fieldset>
-                 <input
-                   placeholder="Your name" type="text" tabindex="1" required autofocus class="username"/>
-               </fieldset>
-               <fieldset>
-                 <input
-                   placeholder="Your Email Address" type="email" tabindex="2" required class="email"/>
-               </fieldset>
-               <fieldset>
-                 <textarea placeholder="Type your message here...." tabindex="5" required class="message" >
+             <!-- Contact Start -->
 
-                 </textarea>
-               </fieldset>
-               <fieldset>
-                 <button  name="submit" type="submit" id="contact-submit" data-submit="...Sending" class="submit">
-                   Submit
-                 </button>
-               </fieldset>
-             </form>
-          </div>
-      
-          <!-- loader -->
-          <div class="loader">
-            <img
-              src="https://media.giphy.com/media/MEiZ5h8lOkM7rwideE/giphy.gif"
-              alt=""
-            />
-          </div>
-      
-          <script
-            type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
-          ></script>
-          <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-          <script type="text/javascript">
-      
-      
-            (function () {
-              // emailjs.init("USERID");
-              emailjs.init("user_uz3bFwaGVL5JH7ULPvhOY");
-            })();
-      
-      
-      
-            function validate() {
-              let loader = document.querySelector(".loader");
-              let name = document.querySelector(".username");
-              let email = document.querySelector(".email");
-              let msg = document.querySelector(".message");
-              let btn = document.querySelector(".submit");
-      
-              btn.addEventListener("click", (e) => {
-                e.preventDefault();
-                if (name.value == "" || email.value == "" || msg.value == "") {
-                  emptyerror();
-                } else {
-                  loader.style.display = "flex";
-                  sendmail(name.value, email.value, msg.value);
-                  success();
-                  loader.style.display = "none";
-                }
-              });
-            }
-            validate();
+      <section id="contact">
+         <div class="container contact" id="contact">
+            <div class="row">
+               <h1>Contact <span>us</span></h1>
+               <div class="col-12 col-md-8 col-lg-8">
+                  <form class="contact" class="form">
+                     <div class="textarea">
+                        <label for="name">Name</label>
+                        <input type="text" placeholder="Please enter your name..." class="form-control" id="name" name="name" required />
+                     </div>
+                     <div class="textarea">
+                        <label for="">Message</label>
+                        <textarea
+                           placeholder="Please enter your message here" 
+                           type="text"
+                           class="form-control"
+                           id="messege"
+                           name="messege"
+                           required
+                           ></textarea>
+                     </div>
+                     <button class="contact-btn" type="submit">Send</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+      <script src="app.js"></script>
 
-      
-            function sendmail(name, email, msg) {
-              emailjs.send("service_8ml36t4", "template_goe6ieo", {
-                to_name: "schwitz",
-                from_name: email,
-                message: msg,
-              });
-            }
-
-
-            
-            function emptyerror() {
-              Swal.fire({
-                icon: "error",
-                title: "Oops...",
-                text: "Fields cannot be empty!",
-              });
-            }
-      
-            function error() {
-              Swal.fire({
-                icon: "error",
-                title: "Oops...",
-                text: "Something went wrong!",
-              });
-            }
-      
-            function success() {
-              Swal.fire({
-                icon: "success",
-                title: "Success...",
-                text: "Successfully sent message",
-              });
-            }
-          </script>
-        </section>
+      <!-- Contact Start -->
 
 
    </body>
