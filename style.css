@@ -171,10 +171,18 @@ span{
   color: white;
 }
 
+.skill-row{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .skill-img{
   padding:20px;
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
   object-fit: cover;
 }
 
@@ -186,6 +194,14 @@ span{
   margin-top: 100px;
   padding-bottom: 100px;
   text-align: center;
+}
+
+label{
+  margin: 20px;
+}
+
+.textarea{
+  margin: 20px;
 }
 
 .contact h2 {
@@ -275,6 +291,8 @@ span{
 
 /* Media Query */
 
+
+/* Mobile start */
 @media screen and (max-width: 768px) {
   .type-text,
   .cursor {
@@ -351,6 +369,57 @@ span{
 
 }
 
+/* Mobile end  */
+
+
+/* Tab start */
+
+@media screen and (min-width:768px) and (max-width:1000px) {
+
+  #skills{
+    height: 50vh;
+  }
+
+  .hero-img  {
+    height: 250px;
+    width: 400px;
+    object-fit: cover;
+  }
+  
+
+  #about{
+    height: 80vh;
+  }
+}
+/* Tab End */
+
+/* Ipad pro start */
+
+@media screen and (min-width:1366px) and (max-width:1366px) {
+  #hero{
+    height: 50vh;
+  }
+} 
+
+/* Ipad pro end*/
+
+/* Galaxy fold Start */
+@media only screen 
+and (min-device-width : 280px) 
+and (max-device-width : 280px) 
+{
+  #skills{
+    height: 180vh;
+  }
+
+  .hero-img{
+    height: 200px;
+    width: 200px;
+  }
+
+}
+
+/* Galaxy fold End */
 
 
 @media screen and (min-width:768px) {
