@@ -12,6 +12,9 @@
   -o-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
+body {
+  overflow-x: hidden; /* Hide scrollbars */
+}
 
 /* Default stylings */
 
@@ -41,12 +44,12 @@
 Navbar Start
 
 
-.navbar-brand {
+.navbar-brand{
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   font-weight: 500;
   font-size: 1.5rem;
-}
+} 
 
 
 .nav-item {
@@ -74,8 +77,8 @@ Navbar Start
 }
 
 .hero-img  {
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 400px;
   object-fit: cover;
 }
 
@@ -159,36 +162,23 @@ span{
 }
 /* About End  */
 
-
-
-
-/* skills start */
+/* Skill start */
 
 #skills{
-  padding-top:50px;
-  text-align:center;
+  text-align: center;
+  height: 50vh;
   background-color: black;
-  color:white;
-  height: 80vh;
+  color: white;
 }
 
-.image-con{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows:150px 150px;
-  justify-items: center;
-  align-items:center;
-
-}
-
-.single-img{
-  margin:0 30px;
+.skill-img{
+  padding:20px;
   height: 150px;
   width: 150px;
+  object-fit: cover;
 }
 
-/* skills end */
-
+/* Skill End */
 
 /* Contact start */
 .contact {
@@ -296,9 +286,15 @@ span{
     margin-right:10px;
   }
 
-  
+  .skill-img{
+    height: 160px;
+    width:160px;
+    padding: 30px;
+  }
 
-
+  #skills{
+    height: 105vh;
+  }
   .nav-item,
   .nav-brand {
     margin: 0;
