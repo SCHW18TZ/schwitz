@@ -166,7 +166,7 @@ span{
 
 #skills{
   text-align: center;
-  height: 71vh;
+  height: 70vh;
   background-color: black;
   color: white;
 }
@@ -180,9 +180,9 @@ span{
 
 
 .skill-img{
-  padding:20px;
-  height: 200px;
-  width: 200px;
+  padding:40px;
+  height: 250px;
+  width: 250px;
   object-fit: cover;
 }
 
@@ -456,4 +456,14 @@ and (max-device-width : 280px)
     float: right;
   }
 
+}
+
+h5{
+  color: red;
+  background-color: black
+}
+
+.d-md-block{
+  display: block!important;
+  height: -webkit-fill-available;
 }
