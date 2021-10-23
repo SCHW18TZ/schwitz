@@ -37,20 +37,20 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(229, 1, 1);
-} */
+}
+*/
 
 /* Scrollbar -- end */
 
 Navbar Start
 
 
-.navbar-brand{
+.navbar-brand {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 500;
   font-size: 1.5rem;
-} 
-
+}
 
 .nav-item {
   font-size: 1.5rem;
@@ -76,7 +76,7 @@ Navbar Start
   align-items: center;
 }
 
-.hero-img  {
+.hero-img {
   height: 250px;
   width: 400px;
   object-fit: cover;
@@ -129,33 +129,32 @@ Navbar Start
 
 /* About start  */
 
-.about-font{
+.about-font {
   text-align: center;
 }
 
-.about-img{
+.about-img {
   display: flex;
   justify-content: center;
   align-items: center;
-} 
+}
 
-#about{
+#about {
   height: 100vh;
   background-color: black;
-  color:white;
+  color: white;
   justify-content: center;
   align-items: center;
-  display:flex;
+  display: flex;
 }
-span{
-  color:crimson;
+span {
+  color: crimson;
 }
 
-
-.about-text p{
-  text-align:center;
+.about-text p {
+  text-align: center;
 }
-#about img{
+#about img {
   height: 200px;
   width: 200px;
   float: left;
@@ -164,23 +163,22 @@ span{
 
 /* Skill start */
 
-#skills{
+#skills {
   text-align: center;
   height: 71vh;
   background-color: black;
   color: white;
 }
 
-.skill-row{
+.skill-row {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
-.skill-img{
-  padding:20px;
+.skill-img {
+  padding: 20px;
   height: 200px;
   width: 200px;
   object-fit: cover;
@@ -190,17 +188,17 @@ span{
 
 /* Contact start */
 .contact {
-  color:black;
+  color: black;
   margin-top: 100px;
   padding-bottom: 100px;
   text-align: center;
 }
 
-label{
+label {
   margin: 20px;
 }
 
-.textarea{
+.textarea {
   margin: 20px;
 }
 
@@ -220,9 +218,9 @@ label{
   text-align: left;
   background: #ffffff;
   -webkit-box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
-          box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
   -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 
 .contact .form h2 {
@@ -252,36 +250,37 @@ label{
   height: 150px;
 }
 
-
-
 .contact .form button:hover {
   opacity: 0.9;
 }
 
 .contact .form:hover {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
-.contact-btn{
-  margin-top:30px;
-  color:black;
+.contact-btn {
+  margin-top: 30px;
+  color: black;
   display: inline-block;
   text-decoration: none;
-  color:#fff;
+  color: #fff;
   border: 1px solid black;
   position: relative;
   background-color: black;
   padding: 12px 50px;
-  cursor:pointer;
+  cursor: pointer;
   transition: 0.3s ease;
 }
-#contact button:hover{
+#contact button:hover {
   border: 1px solid crimson;
-  background-color:crimson;
+  background-color: crimson;
 }
 
-#about h1, #trainers h1,#courses h1,#contact h1{
+#about h1,
+#trainers h1,
+#courses h1,
+#contact h1 {
   font-size: 2rem;
 }
 
@@ -289,30 +288,29 @@ label{
 
 /* Footer start */
 
-#footer{
+#footer {
   text-align: center;
   color: #fff;
   height: 20vh;
-  background-image: linear-gradient(60deg,#29323c 0%,#485563 100%);
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
 
-#footer h2{
-  padding:20px 0 0 0  ;
+#footer h2 {
+  padding: 20px 0 0 0;
 }
 
-.fa-3x{
+.fa-3x {
   margin: 0 20px;
 }
 
-.footer-imgs{
-  margin-bottom:  30px;
+.footer-imgs {
+  margin-bottom: 30px;
   padding-top: 10px;
 }
 
 /* Footer End */
 
 /* Media Query */
-
 
 /* Mobile start */
 @media screen and (max-width: 768px) {
@@ -322,17 +320,17 @@ label{
     margin: 90px 0;
   }
 
-  .navbar-toggler{
-    margin-right:10px;
+  .navbar-toggler {
+    margin-right: 10px;
   }
 
-  .skill-img{
+  .skill-img {
     height: 160px;
-    width:160px;
+    width: 160px;
     padding: 30px;
   }
 
-  #skills{
+  #skills {
     height: 105vh;
   }
   .nav-item,
@@ -341,77 +339,66 @@ label{
     padding: 0;
   }
 
-  #hero{
+  #hero {
     height: 100vh;
   }
 
-  .hero-img{
+  .hero-img {
     margin-top: 100px;
   }
 
-  .about-img{
+  .about-img {
     margin-top: 50px;
   }
-  .hero-img,.about-img {
+  .hero-img,
+  .about-img {
     height: 250px;
     width: 100%;
     object-fit: cover;
   }
 
-
-  .about-font{
+  .about-font {
     margin-top: 50px;
   }
 
-  .about-img{
+  .about-img {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-
-
-  #skills{
+  #skills {
     padding-bottom: 20px;
   }
 
-  .single-img{
+  .single-img {
     height: 90px;
     width: 90px;
   }
-  
-    
-  .about-img{
+
+  .about-img {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
-
-
 }
 
 /* Mobile end  */
 
-
-
-
 /* Tab start */
 
-@media screen and (min-width:768px) and (max-width:1000px) {
-
-  #skills{
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  #skills {
     height: 50vh;
   }
 
-  .hero-img  {
+  .hero-img {
     height: 250px;
     width: 400px;
     object-fit: cover;
   }
-  
 
-  #about{
+  #about {
     height: 80vh;
   }
 }
@@ -419,41 +406,68 @@ label{
 
 /* Ipad pro start */
 
-@media screen and (min-width:1366px) and (max-width:1366px) {
-  #hero{
+@media screen and (min-width: 1366px) and (max-width: 1366px) {
+  #hero {
     height: 50vh;
   }
-} 
+}
 
 /* Ipad pro end*/
 
 /* Galaxy fold Start */
-@media only screen 
-and (min-device-width : 280px) 
-and (max-device-width : 280px) 
-{
-  #skills{
+@media only screen and (min-device-width: 280px) and (max-device-width: 320px) {
+  #skills {
     height: 180vh;
   }
 
-  .hero-img{
+  .hero-img {
     height: 200px;
     width: 200px;
   }
 
+  .type-text,
+  .cursor {
+    font-size: 1rem;
+    margin: 90px 0;
+  }
 }
 
 /* Galaxy fold End */
 
-
-@media screen and (min-width:768px) {
-  
-  .about-text{
+@media screen and (min-width: 768px) {
+  .about-text {
     position: relative;
     top: 150px;
-    right:100px;
+    right: 100px;
     text-align: center;
     float: right;
   }
+}
 
+
+@media only screen and (min-device-width: 425px) and (max-device-width: 768px) {
+
+  .type-text,
+  .cursor {
+    font-size: 2rem;
+    margin: 90px 0;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 425px) {
+
+  .type-text,
+  .cursor {
+    font-size: 25px;
+    margin: 90px 0;
+  }
+}
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 375px) {
+
+  .type-text,
+  .cursor {
+    font-size: 25px;
+    margin: 90px 0;
+  }
 }
