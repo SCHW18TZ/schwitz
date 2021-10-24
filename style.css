@@ -180,8 +180,7 @@ span {
 
 .skill-img {
   padding: 20px;
-  height: 200px;
-  width: 200px;
+  width: 10vw;
   object-fit: cover;
 }
 
