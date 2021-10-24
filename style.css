@@ -14,6 +14,7 @@
 }
 body {
   overflow-x: hidden; /* Hide scrollbars */
+  overscrool-behavior:none;
 }
 
 /* Default stylings */
