@@ -398,6 +398,13 @@ label {
     object-fit: cover;
   }
 
+  .type-text,
+  .cursor {
+    font-size: 20px;
+    margin: 90px 0;
+  }
+}
+  
   #about {
     height: 80vh;
   }
@@ -424,14 +431,12 @@ label {
     height: 200px;
     width: 200px;
   }
-
   .type-text,
   .cursor {
-    font-size: 1rem;
+    font-size: 20px;
     margin: 90px 0;
   }
 }
-
 /* Galaxy fold End */
 
 @media screen and (min-width: 768px) {
@@ -467,7 +472,7 @@ label {
 
   .type-text,
   .cursor {
-    font-size: 15px;
-    margin: 80px 0;
+    font-size: 20px;
+    margin: 90px 0;
   }
 }
