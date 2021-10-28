@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 
 /* Default stylings */
 * {
@@ -14,7 +15,7 @@
 }
 body {
   overflow-x: hidden; /* Hide scrollbars */
-  overscrool-behavior:none;
+  overscrool-behavior: none;
 }
 
 /* Default stylings */
@@ -291,7 +292,7 @@ label {
 #footer {
   text-align: center;
   color: #fff;
-  height: 20vh;
+
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
 
@@ -306,6 +307,10 @@ label {
 .footer-imgs {
   margin-bottom: 30px;
   padding-top: 10px;
+}
+
+#footer p {
+  margin-bottom: 0;
 }
 
 /* Footer End */
@@ -403,8 +408,7 @@ label {
     font-size: 20px;
     margin: 90px 0;
   }
-}
-  
+
   #about {
     height: 80vh;
   }
@@ -449,9 +453,7 @@ label {
   }
 }
 
-
 @media only screen and (min-device-width: 425px) and (max-device-width: 768px) {
-
   .type-text,
   .cursor {
     font-size: 2rem;
@@ -460,7 +462,6 @@ label {
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 425px) {
-
   .type-text,
   .cursor {
     font-size: 25px;
@@ -469,10 +470,23 @@ label {
 }
 
 @media only screen and (min-device-width: 280px) and (max-device-width: 375px) {
-
   .type-text,
   .cursor {
     font-size: 20px;
     margin: 90px 0;
   }
+}
+
+.nav-link,
+.nav-link .nav-icon {
+  color: #ccc;
+}
+
+.nav-link {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.nav-item:hover .nav-link-item {
+  color: rgb(229, 21, 63) !important;
+  transition: 0.2s ease;
 }
