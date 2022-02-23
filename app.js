@@ -1,58 +1,113 @@
-const typeText = document.querySelector(".type-text");
-const cursorSpan = document.querySelector(".cursor");
+// typed js
+const typed = new Typed(".typing", {
+    strings: ["Bot Developer", "penetration tester", "Web Developer"],
+    loop: true,
+    typeSpeed: 80,
+    backSpeed: 40,
+  });
+  
+  // Theme changer
+  const themes = [
+    "#9affe1",
+    "#abff9a",
+    "#ff9a9a",
+    "#f5ff9a",
+    "#9aadff",
+    "#ffd280",
+    "#adff6b",
+    "#6bfaff",
+    "#55F7DD",
+    "#7BF774",
+    "#F770F4",
+    "#E2F780",
+  ];
+  const root = document.querySelector(":root");
+  const themeToggle = document.querySelector("#main-name");
+  let currentTheme = 0;
+  
+  const changeTheme = () => {
+    currentTheme++;
+    if (currentTheme == themes.length) {
+      currentTheme = 0;
+    }
+    root.style.setProperty("--main-accent", themes[currentTheme]);
+  };
+  themeToggle.addEventListener("click", () => {
+    changeTheme();
+  });
+  
+  let scrolling = false;
+  window.addEventListener("scroll", () => {
+    if (!scrolling) {
+      changeTheme();
+      scrolling = true;
+      setTimeout(() => (scrolling = false), 5000);
+    }
+  });
+  
+  const hamburger = document.querySelector("#mobile-menu");
+  const tabs = document.querySelector(".navbar__menu");
+  //display hamburger menue
+  const mobileMenu = () => {
+    hamburger.classList.toggle("is-active");
+    tabs.classList.toggle("active");
+  };
+  
+  hamburger.addEventListener("click", mobileMenu);
+  
+  
+  
+  
+//highlight active menu
+const navLogo = document.querySelector("#navbar__logo");
+const highlightMenu = () => {
+  const activeElement = document.querySelector(".highlight");
+  const homeMenu = document.querySelector("#home-page");
+  const aboutMenu = document.querySelector("#about-page");
+  const resumeMenu = document.querySelector("#resume-page");
+  const stackMenu = document.querySelector("#stack-page");
 
-const textArray = ["Hello, I'm Schwitz.", "A web-developer.", "A penetration tester."];
-const typingDelay = 50;
-const erasingDelay = 50;
-const newTextDelay = 500; // Delay between current and next text
-let textArrayIndex = 0;
-let charIndex = 0;
+  let scrollPos = window.scrollY;
+  if (window.innerWidth > 960 && scrollPos < 500) {
+    homeMenu.classList.add("highlight");
+    aboutMenu.classList.remove("highlight");
+    return;
+  } else if (window.innerWidth > 960 && scrollPos < 900) {
+    aboutMenu.classList.add("highlight");
+    homeMenu.classList.remove("highlight");
+    resumeMenu.classList.remove("highlight");
+    return;
+  } else if (window.innerWidth > 960 && scrollPos < 1500) {
+    resumeMenu.classList.add("highlight");
+    aboutMenu.classList.remove("highlight");
+    stackMenu.classList.remove("highlight");
+    return;
+  } else if (window.innerWidth > 960 && scrollPos < 3000) {
+    stackMenu.classList.add("highlight");
+    resumeMenu.classList.remove("highlight");
 
-function type() {
-  if (charIndex < textArray[textArrayIndex].length) {
-    if (!cursorSpan.classList.contains("typing"))
-      cursorSpan.classList.add("typing");
-    typeText.textContent += textArray[textArrayIndex].charAt(charIndex);
-    charIndex++;
-    setTimeout(type, typingDelay);
-  } else {
-    cursorSpan.classList.remove("typing");
-    setTimeout(erase, newTextDelay);
+    return;
   }
-}
 
-function erase() {
-  if (charIndex > 0) {
-    if (!cursorSpan.classList.contains("typing"))
-      cursorSpan.classList.add("typing");
-    typeText.textContent = textArray[textArrayIndex].substring(
-      0,
-      charIndex - 1
-    );
-    charIndex--;
-    setTimeout(erase, erasingDelay);
-  } else {
-    cursorSpan.classList.remove("typing");
-    textArrayIndex++;
-    if (textArrayIndex >= textArray.length) textArrayIndex = 0;
-    setTimeout(type, typingDelay + 1100);
+  if (
+    (activeElement && window.innerWidth < 960 && scrollPos < 600) ||
+    activeElement
+  ) {
+    activeElement.classList.remove("highlight");
   }
-}
+};
 
-document.addEventListener("DOMContentLoaded", function () {
-  // On DOM Load initiate the effect
-  if (textArray.length) setTimeout(type, newTextDelay + 250);
-});
+window.addEventListener("scroll", highlightMenu);
+window.addEventListener("click", highlightMenu);
 
+//close mobile menu on item click
+const hideMobileMenu = () => {
+  const menuBars = document.querySelector(".is-active");
+  if (window.innerWidth <= 768 && menuBars) {
+    hamburger.classList.toggle("is-active");
+    tabs.classList.remove("active");
+  }
+};
 
-
-// What's app contact  
-
-var frm = document.querySelector('#contact')
-frm.addEventListener("submit", (err) => {
-  // Prevents from refresh
-  err.preventDefault();
-  var name = document.getElementById("name").value;
-  var messege = document.getElementById("messege").value;
-  var win = window.open(`https://wa.me/+919041063244?text=Hello%2C%20my%20name%20is%20%20${name},%20${messege}`, '_blank');
-});
+tabs.addEventListener("click", hideMobileMenu);
+navLogo.addEventListener("click", hideMobileMenu);
