@@ -55,8 +55,13 @@ const typed = new Typed(".typing", {
   
   hamburger.addEventListener("click", mobileMenu);
   
+  function getYPosition(){
+    var top  = window.pageYOffset || document.documentElement.scrollTop
+    return top;
+    console.log(top)
+  }
   
-  
+  getYPosition()
   
 //highlight active menu
 const navLogo = document.querySelector("#navbar__logo");
@@ -64,8 +69,7 @@ const highlightMenu = () => {
   const activeElement = document.querySelector(".highlight");
   const homeMenu = document.querySelector("#home-page");
   const aboutMenu = document.querySelector("#about-page");
-  const resumeMenu = document.querySelector("#resume-page");
-  const stackMenu = document.querySelector("#stack-page");
+  const skillsMenu = document.querySelector("#skills-page");
 
   let scrollPos = window.scrollY;
   if (window.innerWidth > 960 && scrollPos < 500) {
@@ -75,19 +79,15 @@ const highlightMenu = () => {
   } else if (window.innerWidth > 960 && scrollPos < 900) {
     aboutMenu.classList.add("highlight");
     homeMenu.classList.remove("highlight");
-    resumeMenu.classList.remove("highlight");
-    return;
-  } else if (window.innerWidth > 960 && scrollPos < 1500) {
-    resumeMenu.classList.add("highlight");
-    aboutMenu.classList.remove("highlight");
-    stackMenu.classList.remove("highlight");
-    return;
-  } else if (window.innerWidth > 960 && scrollPos < 3000) {
-    stackMenu.classList.add("highlight");
-    resumeMenu.classList.remove("highlight");
+    skillsMenu.classList.remove("highlight");
 
     return;
+  } else if (window.innerWidth > 960 && scrollPos < 1500) {
+    aboutMenu.classList.remove("highlight");
+    skillsMenu.classList.add("highlight");
+    return;
   }
+
 
   if (
     (activeElement && window.innerWidth < 960 && scrollPos < 600) ||
